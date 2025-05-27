@@ -26,7 +26,7 @@
         </ul>
 
         <h3>RSVP</h3>
-        <form>
+        <form onsubmit="handleRSVP(event)">
             <label for="eventName">Event Name:</label><br>
             <input type="text" id="eventName" name="eventName"><br>
             <label for="yourName">Your Name:</label><br>
@@ -36,7 +36,19 @@
     </main>
 
     <footer>
+        <button onclick="subscribe()">Subscribe</button>
         <p>&copy; 2025 Book Haven Bookstore</p>
     </footer>
+
+    <script>
+        function subscribe() {
+            alert("Thank you for subscribing.");
+        }
+
+        function handleRSVP(event) {
+            event.preventDefault();
+            alert("Thank you for your message.");
+        }
+    </script>
 </body>
 </html>
