@@ -27,9 +27,41 @@
             </tr>
         </table>
     </main>
+    <button onclick="addToCart()">Add to Cart</button>
+<button onclick="clearCart()">Clear Cart</button>
+<button onclick="processOrder()">Process Order</button>
 
-    <footer>
-        <p>&copy; 2025 Book Haven Bookstore</p>
     </footer>
+    <script>
+
+  function addToCart() {
+    alert("Item added to the cart.");
+  }
+
+  function clearCart() {
+    // simple cart check (replace with real cart logic if needed)
+    let hasItems = true; // change to false if cart is empty
+    if (hasItems) {
+      alert("Cart cleared.");
+    } else {
+      alert("No items to clear.");
+    }
+  }
+
+  function processOrder() {
+    let hasItems = true; // change to false if cart is empty
+    if (hasItems) {
+      alert("Thank you for your order.");
+    } else {
+      alert("Cart is empty.");
+    }
+  }
+</script>
+
+<script>
+  function subscribe() {
+    alert("Thank you for subscribing.");
+  }
+</script>
 </body>
 </html>
