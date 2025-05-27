@@ -22,7 +22,7 @@
         <p>Book Haven Bookstore is dedicated to creating a community of readers and learners. We offer a wide selection of books, from bestsellers to rare finds!</p>
         
         <h3>Contact Us</h3>
-        <form>
+        <form onsubmit="handleContact(event)">
             <label for="name">Name:</label><br>
             <input type="text" id="name" name="name"><br>
             
@@ -40,7 +40,19 @@
     </main>
 
     <footer>
+        <button onclick="subscribe()">Subscribe</button>
         <p>&copy; 2025 Book Haven Bookstore</p>
     </footer>
+
+    <script>
+        function subscribe() {
+            alert("Thank you for subscribing.");
+        }
+
+        function handleContact(event) {
+            event.preventDefault();
+            alert("Thank you for your message.");
+        }
+    </script>
 </body>
 </html>
